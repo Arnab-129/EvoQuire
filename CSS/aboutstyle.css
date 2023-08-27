@@ -42,3 +42,44 @@ body {
 }
 
 /*Header part*/
+
+/*Main Part*/
+
+/*Image part*/
+.middle-upper {
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:100px 300px;
+    margin-top: -1rem;
+}
+
+#happy-page {
+    display:block;
+    font-size: 60px;
+    color:#1b1a3d;
+    letter-spacing: 0.05rem;
+    font-weight:800;
+    margin-bottom: 0px;
+    position: absolute;
+    top: -30px;
+}
+
+#image-holder {
+    width:90em;
+    height:60em;
+    margin-top:0px;
+}
+
+.middle-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding:0px 300px;
+    position: relative;
+}
+/*Image part*/
+
+
