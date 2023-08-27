@@ -1,0 +1,24 @@
+img{
+    height: 500px;
+    width: 500px;
+}
+
+#quiz-questions{
+    display: none;
+}
+
+.selected{
+    background-color: goldenrod;
+}
+
+.correctChoice{
+    background-color: green;
+}
+
+.wrongChoice{
+    background-color: red;
+}
+
+#explanation{
+    display:none;
+}
