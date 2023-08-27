@@ -2,3 +2,11 @@ img{
     height: 500px;
     width: 500px;
 }
+
+#quiz-questions{
+    display: none;
+}
+
+.selected{
+    background-color: goldenrod;
+}
