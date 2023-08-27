@@ -38,7 +38,8 @@ body {
     font-weight: 800;
     letter-spacing: 0.05rem;
     color:#000000;
-    padding-left:30px;
+    margin-left:30px;
+    border-bottom: 3.6px solid black;
 }
 
 /*Header part*/
