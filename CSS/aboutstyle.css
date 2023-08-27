@@ -115,13 +115,19 @@ body {
     display: flex;
     justify-content:space-between;
 }
-
-.credits {
+.hackathon {
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.05rem;
 }
-#credits {
+.credits {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    margin-right: 55px;
+}
+
+.credit {
     font-size: 30px;
     font-weight: 600;
 }
@@ -132,7 +138,7 @@ body {
 }
 
 .our-name {
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 .navigation {
@@ -165,4 +171,9 @@ body {
 .name {
     color:white;
     text-decoration: none;
+}
+
+i {
+    padding-left: 6px;
+    padding-right: 6px;
 }
