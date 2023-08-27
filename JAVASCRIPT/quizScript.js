@@ -13,7 +13,7 @@ exitBtn = document.getElementById('exit');
 
 //generate random question ID
 let questionsID = [];
-while (questionsID.length < 4) {
+while (questionsID.length < 10) {
     let r = Math.floor(Math.random() * 14);
     if (questionsID.indexOf(r) === -1) questionsID.push(r);
 }
@@ -24,6 +24,8 @@ optionB = [];
 optionC = [];
 optionD = [];
 correctAnsID = [];
+explanation = [];
+IPCRule = [];
 quizIndex = 0;
 
 
@@ -41,6 +43,8 @@ async function load() {
                 optionC.push(`${question.Option_C}`);
                 optionD.push(`${question.Option_D}`);
                 correctAnsID.push(`${question.Correct_Option}`);
+                explanation.push(`${question.Additional_Information}`);
+                IPCRule.push(`${question.IPC_Rule}`);
             }
         }
     }
@@ -49,18 +53,16 @@ async function load() {
 
 async function main() {
     await load();
-    
-    attemptButton.addEventListener("click", () => {
-        instructions.classList.add('hidden');
-        quizBg.classList.add('hidden');
-        attemptButton.classList.add('hidden');
-        quiz.classList.remove('hidden');
-        (quiz.children[0]).children[0].innerText = 'Q.' + (quizIndex+1) + ' ' + qnlist[quizIndex];
-        options[0].innerText += ' ' + optionA[quizIndex];
-        options[1].innerText += ' ' + optionB[quizIndex];
-        options[2].innerText += ' ' + optionC[quizIndex];
-        options[3].innerText += ' ' + optionD[quizIndex]; 
 
+    attemptButton.addEventListener("click", () => {
+        if (quizIndex === 0) {
+            instructions.classList.add('hidden');
+            quizBg.classList.add('hidden');
+            attemptButton.classList.add('hidden');
+        }
+        quiz.classList.remove('hidden');
+        (quiz.children[0]).children[0].innerText = 'Q.' + (quizIndex + 1) + ' ' + qnlist[quizIndex];
+        updateOptions();
     })
 
 
@@ -69,7 +71,7 @@ async function main() {
     function handleOptionInput(option) {
         option.addEventListener('click', () => {
             option.classList.add('selected');
-            selectedIndex = options.indexOf(option)  ;
+            selectedIndex = options.indexOf(option);
             // remove other selections when one is selected
             options.forEach(option => {
                 if (options.indexOf(option) !== selectedIndex && option.classList.contains('selected'))
@@ -79,8 +81,8 @@ async function main() {
     }
 
     submitBtn.addEventListener('click', () => {
-        options.forEach(option => option.style.pointerEvents = 'none');
         if (selectedIndex != -1) {
+            options.forEach(option => option.style.pointerEvents = 'none');
             correctAnsIDParsed = (correctAnsID[quizIndex]).charCodeAt() - 65;
             if (selectedIndex === correctAnsIDParsed) {
                 options[selectedIndex].classList.add('correctChoice');
@@ -89,6 +91,9 @@ async function main() {
                 options[selectedIndex].classList.add('wrongChoice');
                 options[correctAnsIDParsed].classList.add('correctChoice');
             }
+            details = document.createElement('p');
+            details.innerText = explanation[quizIndex] + '\n\n' + IPCRule[quizIndex];
+            explainedAns.appendChild(details);
             explainedAns.classList.remove('hidden');
             nextQnBtn.classList.remove('hidden');
             exitBtn.classList.remove('hidden');
@@ -97,8 +102,29 @@ async function main() {
 
     nextQnBtn.addEventListener('click', () => {
         quizIndex++;
+        console.log(quizIndex);
+        if(quizIndex >= 10){
+            quiz.classList.add('hidden');
+            return;
+        }  
+        options[selectedIndex].classList.remove('wrongChoice', 'selected', 'correctChoice');
+        options[correctAnsIDParsed].classList.remove('correctChoice');
+        (quiz.children[0]).children[0].innerText = 'Q.' + (quizIndex + 1) + ' ' + qnlist[quizIndex];
+        updateOptions();
+        selectedIndex = -1;
+        explainedAns.removeChild(details);
+        explainedAns.classList.add('hidden');
+        nextQnBtn.classList.add('hidden');
+        exitBtn.classList.add('hidden'); 
     })
+
+    function updateOptions(){
+        options[0].innerText = '(A) ' + optionA[quizIndex];
+        options[1].innerText = '(B) ' + optionB[quizIndex];
+        options[2].innerText = '(C) ' + optionC[quizIndex];
+        options[3].innerText = '(D) ' + optionD[quizIndex];
+        options.forEach(option => option.style.pointerEvents = 'auto');
+    }
 }
 
 main();
-
