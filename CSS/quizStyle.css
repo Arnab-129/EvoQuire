@@ -10,3 +10,15 @@ img{
 .selected{
     background-color: goldenrod;
 }
+
+.correctChoice{
+    background-color: green;
+}
+
+.wrongChoice{
+    background-color: red;
+}
+
+#explanation{
+    display:none;
+}
