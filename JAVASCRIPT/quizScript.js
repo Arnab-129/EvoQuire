@@ -1,18 +1,20 @@
-attemptButton = document.getElementById('attempt-button')
-instructions = document.getElementById('instruct')
-quizBg = document.getElementById('quizBg')
-quizQuestions = document.getElementById('quiz-questions')
-submitBtn = document.getElementById('answer-submit')
-options = Array.from(document.getElementById('answers').children)
-correctAnsID = 2
-selectedIndex = -1
-explainedAns = document.getElementById('explanation')
+attemptButton = document.getElementById('attempt-button');
+instructions = document.getElementById('instruct');
+quizBg = document.getElementById('quizBg');
+quizQuestions = document.getElementById('quiz-questions');
+submitBtn = document.getElementById('answer-submit');
+options = Array.from(document.getElementById('answers').children);
+correctAnsID = 2;
+selectedIndex = -1;
+explainedAns = document.getElementById('explanation');
+nextQnBtn = document.getElementById('next-question');
+exitBtn = document.getElementById('exit'); 
 
 attemptButton.addEventListener("click", ()=>{
-    instructions.innerHTML = '';
-    quizBg.style.display = 'none';
-    attemptButton.style.display = 'none';
-    quizQuestions.style.display = 'block';
+    instructions.classList.add('hidden');
+    quizBg.classList.add('hidden');
+    attemptButton.classList.add('hidden');
+    quizQuestions.classList.remove('hidden');
 })
 
 options.forEach(option => 
@@ -39,7 +41,9 @@ submitBtn.addEventListener('click', ()=>{
             options[selectedIndex].classList.add('wrongChoice');
             options[correctAnsID].classList.add('correctChoice');
         }
-        explainedAns.style.display = 'block';
+        explainedAns.classList.remove('hidden');
+        nextQnBtn.classList.remove('hidden');
+        exitBtn.classList.remove('hidden');
     }
 })
 
