@@ -8,36 +8,38 @@ correctAnsID = 2;
 selectedIndex = -1;
 explainedAns = document.getElementById('explanation');
 nextQnBtn = document.getElementById('next-question');
-exitBtn = document.getElementById('exit'); 
+exitBtn = document.getElementById('exit');
 
-attemptButton.addEventListener("click", ()=>{
+questions = [];
+
+attemptButton.addEventListener("click", () => {
     instructions.classList.add('hidden');
     quizBg.classList.add('hidden');
     attemptButton.classList.add('hidden');
     quizQuestions.classList.remove('hidden');
 })
 
-options.forEach(option => 
-    option.addEventListener('click', ()=>{
+options.forEach(option => handleOptionInput(option));
+
+function handleOptionInput(option){
+    option.addEventListener('click', () => {
         option.classList.add('selected');
-        selectedIndex = options.indexOf(option) ;
+        selectedIndex = options.indexOf(option);
         // remove other selections when one is selected
         options.forEach(option => {
-            if(options.indexOf(option)!==selectedIndex && option.classList.contains('selected'))
+            if (options.indexOf(option) !== selectedIndex && option.classList.contains('selected'))
                 option.classList.remove('selected');
         })
     })
-)
+}
 
-submitBtn.addEventListener('click', ()=>{
-    if(selectedIndex === -1){
-        console.log('Please select an answer first!');
-    }
-    else{
-        if(selectedIndex === correctAnsID){
+submitBtn.addEventListener('click', () => {
+    options.forEach(option => option.style.pointerEvents = 'none');
+    if (selectedIndex != -1) {
+        if (selectedIndex === correctAnsID) {
             options[selectedIndex].classList.add('correctChoice');
         }
-        else{
+        else {
             options[selectedIndex].classList.add('wrongChoice');
             options[correctAnsID].classList.add('correctChoice');
         }
