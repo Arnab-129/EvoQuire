@@ -1,0 +1,152 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin:0 auto;
+    padding:0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+/*Header part*/
+.header {
+    display:inline;
+    font-size:26px;
+    font-weight: 800;
+    color:#000000;
+}
+
+.navbar {
+    color:#000000;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 300px;
+    height:7.5vh;
+}
+
+.link-right {
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.header-link {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    color:#000000;
+    margin-left:30px;
+    border-bottom: 3.6px solid black;
+}
+.upper-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:50px 70px;
+}
+
+.support {
+    color:#1b1a3d;
+    font-size:30px;
+    font-weight: 600;
+}
+
+
+#image-holder {
+    width:90em;
+    height:75em;
+    margin-top:0px;
+}
+
+.image-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#support {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.feedback {
+    text-decoration: none;
+    font-weight: 800;
+    color:#1b1a3d;
+}
+/*Footer part*/
+.lower {
+    color:white;
+    background-color:#1b1a3d;
+    padding:60px 300px;
+    display: flex;
+    justify-content:space-between;
+}
+.hackathon {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+.credits {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    margin-right: 55px;
+}
+
+.credit {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.members {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.our-name {
+    padding-bottom: 25px;
+}
+
+.navigation {
+    font-size: 24px;
+}
+
+.link-bottom {
+    list-style: none;
+    
+    padding-left: 0px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color:white;
+    border-bottom: 3.6px solid white;
+}
+
+.links {
+    padding:10px 0px 10px 0px;
+}
+.links:last-child {
+    padding-bottom:0px;
+}
+#nav {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.name {
+    color:white;
+    text-decoration: none;
+}
+
+i {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+/*footer*/
+
