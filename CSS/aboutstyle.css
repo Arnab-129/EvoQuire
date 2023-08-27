@@ -1,0 +1,44 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin:0 auto;
+    padding:0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+/*Header part*/
+.header {
+    display:inline;
+    font-size:26px;
+    font-weight: 800;
+    color:#000000;
+}
+
+.navbar {
+    color:#000000;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 300px;
+    height:7.5vh;
+}
+
+.link-right {
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.header-link {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    color:#000000;
+    padding-left:30px;
+}
+
+/*Header part*/
