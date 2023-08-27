@@ -108,3 +108,61 @@ body {
 
 /*lower part*/
 /*footer part*/
+.lower {
+    color:white;
+    background-color:#1b1a3d;
+    padding:60px 300px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.credits {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+#credits {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.members {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.our-name {
+    padding-bottom: 10px;
+}
+
+.navigation {
+    font-size: 24px;
+}
+
+.link-bottom {
+    list-style: none;
+    
+    padding-left: 0px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color:white;
+    
+}
+
+.links {
+    padding:10px 0px 10px 0px;
+}
+.links:last-child {
+    padding-bottom:0px;
+}
+#nav {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.name {
+    color:white;
+    text-decoration: none;
+}
