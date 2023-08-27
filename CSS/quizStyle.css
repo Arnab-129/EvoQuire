@@ -3,10 +3,6 @@ img{
     width: 500px;
 }
 
-#quiz-questions{
-    display: none;
-}
-
 .selected{
     background-color: goldenrod;
 }
@@ -19,6 +15,6 @@ img{
     background-color: red;
 }
 
-#explanation{
+.hidden{
     display:none;
 }
