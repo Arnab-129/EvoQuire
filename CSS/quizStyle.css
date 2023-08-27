@@ -1,6 +1,32 @@
+:root{
+    font-family: 'Inter';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 20%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    display:none   !important;
+}
+
+#instruct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 img{
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
 }
 
 .selected{
@@ -15,6 +41,3 @@ img{
     background-color: red;
 }
 
-.hidden{
-    display:none;
-}
