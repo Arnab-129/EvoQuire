@@ -12,6 +12,7 @@ body {
 .header {
     display:inline;
     font-size:26px;
+    font-weight: 800;
     color:#000000;
 }
 
