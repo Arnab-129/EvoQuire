@@ -9,11 +9,13 @@ selectedIndex = -1;
 explainedAns = document.getElementById('explanation');
 nextQnBtn = document.getElementById('next-question');
 exitBtn = document.getElementById('exit');
-
+quizDialogBox = document.getElementById('inquiz');
+quizDialog = document.getElementById('dialog');
+score = 0;
 
 //generate random question ID
 let questionsID = [];
-while (questionsID.length < 10) {
+while (questionsID.length < 3) {
     let r = Math.floor(Math.random() * 14);
     if (questionsID.indexOf(r) === -1) questionsID.push(r);
 }
@@ -62,6 +64,10 @@ async function main() {
         }
         quiz.classList.remove('hidden');
         (quiz.children[0]).children[0].innerText = 'Q.' + (quizIndex + 1) + ' ' + qnlist[quizIndex];
+        dialog.innerText = 'Time for a cool question, do your awesome best!';
+        dialog.style.fontWeight = '400'
+        quizDialogBox.classList.remove('hidden');
+        
         updateOptions();
     })
 
@@ -82,16 +88,21 @@ async function main() {
 
     submitBtn.addEventListener('click', () => {
         if (selectedIndex != -1) {
+            submitBtn.classList.add('hidden');
             options.forEach(option => option.style.pointerEvents = 'none');
             correctAnsIDParsed = (correctAnsID[quizIndex]).charCodeAt() - 65;
             if (selectedIndex === correctAnsIDParsed) {
                 options[selectedIndex].classList.add('correctChoice');
+                dialog.innerText = "You've got it spot on—legal brilliance at its best!";
+                score ++;
             }
             else {
                 options[selectedIndex].classList.add('wrongChoice');
                 options[correctAnsIDParsed].classList.add('correctChoice');
+                dialog.innerText = "Oh no, looks like it wasn't the correct one. It's okay, learn from your mistakes!";
             }
             details = document.createElement('p');
+            details.style.fontSize = '30px';
             details.innerText = explanation[quizIndex] + '\n\n' + IPCRule[quizIndex];
             explainedAns.appendChild(details);
             explainedAns.classList.remove('hidden');
@@ -102,20 +113,32 @@ async function main() {
 
     nextQnBtn.addEventListener('click', () => {
         quizIndex++;
-        console.log(quizIndex);
-        if(quizIndex >= 10){
+        // console.log(quizIndex);
+        if(quizIndex >= 3){
             quiz.classList.add('hidden');
+            result = document.getElementById('result')
+            result.innerText = 'Well done for completing this quiz, we hope you leant a lot! Your score is: ' + score;
+            document.querySelector('.resultDiv').classList.remove('hidden');
+            quizDialogBox.classList.add('hidden');
             return;
         }  
+        submitBtn.classList.remove('hidden');
         options[selectedIndex].classList.remove('wrongChoice', 'selected', 'correctChoice');
         options[correctAnsIDParsed].classList.remove('correctChoice');
         (quiz.children[0]).children[0].innerText = 'Q.' + (quizIndex + 1) + ' ' + qnlist[quizIndex];
+        dialog.innerText = 'Time for a cool question, do your awesome best!';
+        dialog.style.fontWeight = '400'
+        quizDialogBox.classList.remove('hidden');
         updateOptions();
         selectedIndex = -1;
         explainedAns.removeChild(details);
         explainedAns.classList.add('hidden');
         nextQnBtn.classList.add('hidden');
         exitBtn.classList.add('hidden'); 
+    })
+
+    exitBtn.addEventListener('click', () => {
+        location.href = 'index.html';
     })
 
     function updateOptions(){
