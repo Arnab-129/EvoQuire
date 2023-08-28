@@ -9,7 +9,7 @@ selectedIndex = -1;
 explainedAns = document.getElementById('explanation');
 nextQnBtn = document.getElementById('next-question');
 exitBtn = document.getElementById('exit');
-
+quizDialog = document.getElementById('inquiz');
 
 //generate random question ID
 let questionsID = [];
