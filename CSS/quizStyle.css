@@ -100,6 +100,30 @@ h1{
     color: #1b1a3d;
 }
 
+.dialogue-1, .dialogue-2{
+    padding: 15px;
+}
+
+.dialogue-1 p{
+    font-size: 36px;
+    text-align: left;
+}
+
+.dialogue-2 p{
+    font-size: 36px;
+    text-align: right;
+}
+
+#attempt-button{
+    background-color: #Af7eff;
+    font-size: 40px;
+    padding: 30px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 3px solid black;
+    margin: 60px;
+}
+
 /* main part end */
 
 /* footer part */
