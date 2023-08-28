@@ -494,14 +494,23 @@ main{
     transform: skewY(4deg);
     font-size: 25px;
     color:#1eaeff;
-    padding:0px 300px;
+    padding:0px 500px;
+    text-align: center;
+}
+
+#title{
+    font-size: 45px;
+    color:white;
+    font-weight: 600;
+    margin-top:30px;
+    transform: skewY(4deg);
 }
 
 #text {
-    font-size: 38px;
-    color:white;
-    font-weight: 800;
-    margin-top:150px;
+    font-size: 32px;
+    color: white;
+    padding-top:70px;
+    margin:5px;
 }
 
 .middle-light {
@@ -518,4 +527,247 @@ main{
 .middle-upper {
     display:flex;
     flex-direction: column-reverse;
+}
+
+.button-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+    flex-direction:column;
+    margin:0px;
+    top:-115px;
+    right:150px;
+    position:relative;
+    z-index: 2000;
+}
+
+.play-btn-2 {
+    margin: 0px 80px;
+    height:6em;
+    width:18em;
+    background-color:#bce7ff;
+    border:2px solid black;
+    border-radius: 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 5px black;
+    z-index: 12;
+  }
+
+  .play-btn-2:active{
+    transform: translateY(10px);
+}
+
+.daisy-n-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px 300px;
+}
+
+.chicken-only {
+    height: 180px;
+    width: 180px;
+    box-sizing: border-box;
+    border: 2.5px solid black;
+    border-radius: 20px;
+}
+
+#photo {
+    font-size: 25px;
+    color:black;
+    margin:50px;
+    text-align: center;
+    margin:0px;
+    margin-left:130px
+}
+
+.frog {
+    height: 180px;
+    width: 180px;
+    box-sizing: border-box;
+    border: 2.5px solid black;
+    border-radius: 20px;
+    align-self: right;
+
+}
+
+.kiki-n-chicken {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin:100px 600px 0px 200px;
+}
+
+.middle-dark-2 {
+    background-color: #f1e6ff;
+    left: 0px;
+    right: 0px;
+    height: 600px;
+    color: white;
+    transform: skewY(4deg);
+    transform-origin: top left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 500;
+}
+
+
+.intro-text-2 {
+    transform: skewY(-4deg);
+    font-size: 25px;
+    font-weight: 500;
+    color:#1eaeff;
+    padding:0px 200px;
+    text-align: center;
+}
+
+#title-2{
+    font-size: 45px;
+    color:black;
+    font-weight: 600;
+    margin-top:200px;
+    margin-bottom: 20px;
+    transform: skewY(-4deg);
+    z-index: 9000;
+    position: relative;
+}
+
+#text-2{
+    font-size: 32px;
+    color: black;
+    margin-top:70px;
+    margin:5px;
+}
+
+.middle-light-2{
+    color:black;
+    position: relative;
+    left: 0px;
+    right:0px;
+    height:70px;
+    bottom:580px;
+    background-color: #e0ccf9;
+    transform: skewY(4deg);
+    z-index: 1400;
+}
+
+.middle-upper-2{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.play-btn-3 {
+    margin:50px;
+    height:7em;
+    width:22em;
+    background-color: #cbe581;
+    border:2px solid black;
+    border-radius: 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 5px black;
+    z-index: 12;
+    transform: skewY(-4deg);
+  }
+.play-btn-3:active{
+    transform: translateY(10px);
+}
+
+  .play-3{
+    text-decoration: none;
+    color:#000000;
+    font-size: 38px;
+    font-weight: 700;
+  }
+
+  .button-3 {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    margin:30px;
+  }
+/*Footer part*/
+.lower {
+    max-width: 100vw;
+    color:white;
+    background-color:#1b1a3d;
+    padding:60px 60px;
+    display: flex;
+    font-size: 20px;
+    justify-content:space-around;
+    z-index:500;
+    position: relative;
+}
+.hackathon {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+.credits {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    margin-right: 55px;
+}
+
+.credit {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.members {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.our-name {
+    padding-bottom: 25px;
+}
+
+.navigation {
+    font-size: 20px;
+}
+
+.link-bottom {
+    list-style: none;
+    
+    padding-left: 0px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color:white;
+}
+
+.links {
+    padding:10px 0px 10px 0px;
+}
+
+.links:first-child{
+    padding-top: 0px;
+}
+
+.links:last-child {
+    padding-bottom:0px;
+}
+#nav {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.name {
+    color:white;
+    text-decoration: none;
+}
+
+i {
+    padding-left: 6px;
+    padding-right: 6px;
 }
