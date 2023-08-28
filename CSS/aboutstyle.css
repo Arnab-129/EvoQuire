@@ -109,7 +109,7 @@ main{
     margin-top: -1rem;
 }
 
-.text {
+.text, .lower-text {
     color: #1b1a3d;
     font-size: 23px;
     font-weight: 500;
@@ -196,4 +196,8 @@ main{
 i {
     padding-left: 6px;
     padding-right: 6px;
+}
+
+.credit ~ p{
+    font-size: 20px;
 }
