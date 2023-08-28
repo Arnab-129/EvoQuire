@@ -10,10 +10,11 @@ explainedAns = document.getElementById('explanation');
 nextQnBtn = document.getElementById('next-question');
 exitBtn = document.getElementById('exit');
 quizDialog = document.getElementById('inquiz');
+score = 0;
 
 //generate random question ID
 let questionsID = [];
-while (questionsID.length < 10) {
+while (questionsID.length < 3) {
     let r = Math.floor(Math.random() * 14);
     if (questionsID.indexOf(r) === -1) questionsID.push(r);
 }
@@ -87,6 +88,7 @@ async function main() {
             correctAnsIDParsed = (correctAnsID[quizIndex]).charCodeAt() - 65;
             if (selectedIndex === correctAnsIDParsed) {
                 options[selectedIndex].classList.add('correctChoice');
+                score ++;
             }
             else {
                 options[selectedIndex].classList.add('wrongChoice');
@@ -105,8 +107,10 @@ async function main() {
     nextQnBtn.addEventListener('click', () => {
         quizIndex++;
         // console.log(quizIndex);
-        if(quizIndex >= 10){
+        if(quizIndex >= 3){
             quiz.classList.add('hidden');
+            result = document.getElementById('result')
+            result.innerText = 'Congratulations! Your score is: ' + score;
             return;
         }  
         submitBtn.classList.remove('hidden');
@@ -119,6 +123,10 @@ async function main() {
         explainedAns.classList.add('hidden');
         nextQnBtn.classList.add('hidden');
         exitBtn.classList.add('hidden'); 
+    })
+
+    exitBtn.addEventListener('click', () => {
+        location.href = 'index.html';
     })
 
     function updateOptions(){
