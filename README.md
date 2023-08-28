@@ -17,6 +17,7 @@
     <br />
     <a href="https://github.com/Arnab-129/EvoQuire/"><strong>docs »</strong></a>
     <br />
+
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -36,6 +37,12 @@
 </details>
 
 ## About The Project:
+
+### Preview:
+
+<div align="center">
+<img src="assets/Preview.png" height= 70% width = 70%>
+</div>
 
 ### 💭Inspiration :
 
