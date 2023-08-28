@@ -184,11 +184,20 @@ h1{
     margin: 60px;
 }
 
+#inquiz{
+    margin-bottom: 30px;
+}
+
+#dialog{
+    font-size: 30px;
+}
+
 #next-question , #exit{
     font-size: 25px;
     padding: 20px 70px;
     border-radius: 20px;
     margin: 50px;
+    border: 2px solid black;
 }
 
 #next-question{

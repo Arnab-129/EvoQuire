@@ -2,194 +2,208 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EvoQuire - Quiz</title>
-    <link rel="stylesheet" href="CSS/indexstyle.css">
-    <link rel="stylesheet" href="CSS/quizStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="assets/logo.svg">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EvoQuire - Quiz</title>
+  <link rel="stylesheet" href="CSS/indexstyle.css">
+  <link rel="stylesheet" href="CSS/quizStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="JAVASCRIPT/quizScript.js" defer></script>
+  <script src="JAVASCRIPT/quizScript.js" defer></script>
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="assets/logoonly.png" alt="EvoQuire" class="EvoQuire">
-            <p class="header">EvoQuire</p>
-        </div>
-        <div class="links">
-            <ul class="link-right">
-                <li><a href="index.html" class="header-link">Home</a></li>
-                <li><a href="about.html" class="header-link">Our Vision</a></li>
-                <li><a href="quiz.html" class="header-link"id = "current">Quiz</a></li>
-                <li><a href="
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logoonly.png" alt="EvoQuire" class="EvoQuire">
+      <p class="header">EvoQuire</p>
+    </div>
+    <div class="links">
+      <ul class="link-right">
+        <li><a href="index.html" class="header-link">Home</a></li>
+        <li><a href="about.html" class="header-link">Our Vision</a></li>
+        <li><a href="quiz.html" class="header-link" id="current">Quiz</a></li>
+        <li><a href="
                     feedback.html" class="header-link">Feedback</a></li>
-                <li><a href="support.html" class="header-link">Support</a></li>
-            </ul>
+        <li><a href="support.html" class="header-link">Support</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section id="instruct">
+      <h1>Quiz</h1>
+      <section class="daisy-1">
+        <div class="area-1">
+          <img src="assets/daisy/daisy_02.jpg" alt="daisy" class="image-1">
+          <div class="dialogue-1">
+            <p class="dialogue-daisy-1">Hey there, curious minds! Ready for some brain-teasing fun?</p>
+            <p class="dialogue-daisy-1" id="daisy">Cheep! Cheep!</p>
+          </div>
         </div>
-    </header>
-    <main>
-        <section id="instruct">
-            <h1>Quiz</h1>
-        <section class="daisy-1">
-          <div class="area-1">
-              <img src="assets/daisy/daisy_02.jpg" alt="daisy" class="image-1">
-              <div class="dialogue-1">
-                  <p class="dialogue-daisy-1">Hey there, curious minds! Ready for some brain-teasing fun?</p>
-                  <p class="dialogue-daisy-1" id="daisy">Cheep! Cheep!</p>
-              </div>
-          </div>
-        </section>
-        <section class="daisy-2">
-          <div class="area-2">
-              <img src="assets/kiki/kiki_01.jpg" alt="Kiki" class="image-2">
-              <div class="dialogue-2">
-                  <p class="dialogue-daisy-2">Absolutely! Get ready to test your legal smarts and learn along the way! </p>
-              </div>
-          </div>
-        </section>
-        <section class="daisy-1">
-          <div class="area-1">
-              <img src="assets/daisy/daisy_06.jpg" alt="daisy" class="image-1">
-              <div class="dialogue-1">
-                  <p class="dialogue-daisy-1">Here's the deal: we've got 10 exciting questions for you, all in multiple choice style.</p>
-              </div>
-          </div>
-        </section>
-        <section class="daisy-2">
-          <div class="area-2">
-              <img src="assets/kiki/kiki_03.jpg" alt="Kiki" class="image-2">
-              <div class="dialogue-2">
-                  <p class="dialogue-daisy-2">That means you choose the answer that feels right to you, like picking the tastiest snack! <i>Ribbit!</i></p>
-              </div>
-          </div>
-        </section>
-        <section class="daisy-1">
-          <div class="area-1">
-              <img src="assets/daisy/daisy_01.jpg" alt="daisy" class="image-1">
-              <div class="dialogue-1">
-                  <p class="dialogue-daisy-1">After you pick an answer, hit that submit button, and ta-da! Your choice will be revealed.</p>
-              </div>
-          </div>
-        </section>
-        <section class="daisy-2">
-          <div class="area-2">
-              <img src="assets/kiki/kiki_05.jpg" alt="Kiki" class="image-2">
-              <div class="dialogue-2">
-                  <p class="dialogue-daisy-2">And guess what? We'll also tell you why it's right! Learning and playing all at once, how cool is that? <i>Ribbit!</i></p>
-                </div>
-          </div>
-        </section>
-        <section class="daisy-1">
-          <div class="area-1">
-              <img src="assets/daisy/daisy_06.jpg" alt="daisy" class="image-1">
-              <div class="dialogue-1">
-                  <p class="dialogue-daisy-1">Get ready to shine as a legal whiz, exploring important topics while having a blast.</p>
-              </div>
-          </div>
-        </section>
-        <section class="daisy-3">
-          <div class="area-3">
-              <img src="assets/daisy/daisy_01.jpg" alt="daisy" class="image-3">
-              <div class="dialogue-3">
-                  <p class="dialogue-daisy-3">So, click that button below and let's dive into the adventure of legal rights together!</p>
-              </div>
-              <img src="assets/kiki/kiki_05.jpg" alt="kiki" class="image-4">
-          </div>
-        </section>
       </section>
-        
-        <section id="quiz" class="hidden">
-          <div>
-              <p id="question"></p>
-              <div id="answers">
-                    <div class="option"></div>
-                    <div class="option"></div>
-                    <div class="option"></div>
-                    <div class="option"></div>
-                </div>
-                <button id="answer-submit">Submit</button>
-                <div id="explanation" class="hidden">
-                    <p><u>Explanation</u></p>
-                </div>
-                <div>
-                  <button class="hidden" id="exit">Exit Quiz  &cross;</button>
-                  <button class="hidden" id="next-question">Next Question &rightarrow;</button>
-                </div>
-              </div>
-        </section>
-        <button id="attempt-button">Attempt Quiz Now</button>
-        <div id="image-holder">
-            <img id="quizBg" src="assets/quizBg.jpg" alt="quiz background image">
+      <section class="daisy-2">
+        <div class="area-2">
+          <img src="assets/kiki/kiki_01.jpg" alt="Kiki" class="image-2">
+          <div class="dialogue-2">
+            <p class="dialogue-daisy-2">Absolutely! Get ready to test your legal smarts and learn along the way! </p>
+          </div>
         </div>
-        <div id="result"></div>
-    </main>
-    <section class="lower">
+      </section>
+      <section class="daisy-1">
+        <div class="area-1">
+          <img src="assets/daisy/daisy_06.jpg" alt="daisy" class="image-1">
+          <div class="dialogue-1">
+            <p class="dialogue-daisy-1">Here's the deal: we've got 10 exciting questions for you, all in multiple choice
+              style.</p>
+          </div>
+        </div>
+      </section>
+      <section class="daisy-2">
+        <div class="area-2">
+          <img src="assets/kiki/kiki_03.jpg" alt="Kiki" class="image-2">
+          <div class="dialogue-2">
+            <p class="dialogue-daisy-2">That means you choose the answer that feels right to you, like picking the
+              tastiest snack! <i>Ribbit!</i></p>
+          </div>
+        </div>
+      </section>
+      <section class="daisy-1">
+        <div class="area-1">
+          <img src="assets/daisy/daisy_01.jpg" alt="daisy" class="image-1">
+          <div class="dialogue-1">
+            <p class="dialogue-daisy-1">After you pick an answer, hit that submit button, and ta-da! Your choice will be
+              revealed.</p>
+          </div>
+        </div>
+      </section>
+      <section class="daisy-2">
+        <div class="area-2">
+          <img src="assets/kiki/kiki_05.jpg" alt="Kiki" class="image-2">
+          <div class="dialogue-2">
+            <p class="dialogue-daisy-2">And guess what? We'll also tell you why it's right! Learning and playing all at
+              once, how cool is that? <i>Ribbit!</i></p>
+          </div>
+        </div>
+      </section>
+      <section class="daisy-1">
+        <div class="area-1">
+          <img src="assets/daisy/daisy_06.jpg" alt="daisy" class="image-1">
+          <div class="dialogue-1">
+            <p class="dialogue-daisy-1">Get ready to shine as a legal whiz, exploring important topics while having a
+              blast.</p>
+          </div>
+        </div>
+      </section>
+      <section class="daisy-3">
+        <div class="area-3">
+          <img src="assets/daisy/daisy_01.jpg" alt="daisy" class="image-3">
+          <div class="dialogue-3">
+            <p class="dialogue-daisy-3">So, click that button below and let's dive into the adventure of legal rights
+              together!</p>
+          </div>
+          <img src="assets/kiki/kiki_05.jpg" alt="kiki" class="image-4">
+        </div>
+      </section>
+    </section>
+    <section class="daisy-3 hidden" id="inquiz">
+      <div class="area-3">
+        <img src="assets/daisy/daisy_01.jpg" alt="daisy" class="image-3">
+        <div class="dialogue-3">
+          <p class="dialogue-daisy-3" id="dialog"></p>
+        </div>
+        <img src="assets/kiki/kiki_05.jpg" alt="kiki" class="image-4">
+      </div>
+    </section>
+    <section id="quiz" class="hidden">
+      <div>
+        <p id="question"></p>
+        <div id="answers">
+          <div class="option"></div>
+          <div class="option"></div>
+          <div class="option"></div>
+          <div class="option"></div>
+        </div>
+        <button id="answer-submit">Submit</button>
+        <div id="explanation" class="hidden">
+          <p><u>Explanation</u></p>
+        </div>
         <div>
-          <p class="credit">Hackathon Project</p>
-          <p>Created at InterHacktive 2023</p>
-          <p>Organised By SC-CSE</p>
-          <p>
-            <i class="fa-solid fa-building-columns"></i> Academy of Technology
-          </p>
-          <p>AdiSaptagram</p>
+          <button class="hidden" id="exit">Exit Quiz &cross;</button>
+          <button class="hidden" id="next-question">Next Question &rightarrow;</button>
         </div>
-        <div class="credits">
-          <p class="credit">Credits</p>
-          <p class="team-name">Team Limitless</p>
-          <div class="name">
-            <ul class="members">
-              <li class="our-name">
-                Trisha Seal
-                <a href="https://github.com/EmberTSeal" class="name">
-                  <i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/trisha-seal/" class="name">
-                  <i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-              <li class="our-name">
-                Arnab Bose
-                <a href="https://github.com/Arnab-129" class="name">
-                  <i class="fa-brands fa-github"></i
-                ></a>
-                <a href="www.linkedin.com/in/arnab-bose-440622255" class="name">
-                  <i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
+      </div>
+    </section>
+    <button id="attempt-button">Attempt Quiz Now</button>
+    <div id="image-holder">
+      <img id="quizBg" src="assets/quizBg.jpg" alt="quiz background image">
+    </div>
+    <section class="daisy-3 hidden resultDiv">
+      <div class="area-3">
+        <img src="assets/daisy/daisy_01.jpg" alt="daisy" class="image-3">
+        <div class="dialogue-3">
+          <p class="dialogue-daisy-3" id="result"></p>
         </div>
-        <div class="navigation">
-          <p id="nav">Navigation</p>
-          <ul class="link-bottom">
-            <li class="links"><a href="index.html" class="footer-link">Home</a></li>
-            <li class="links">
-              <a href="about.html" class="footer-link">Our Vision</a>
-            </li>
-            <li class="links"><a href="quiz.html" class="footer-link">Quiz</a></li>
-            <li class="links">
-              <a href="feedback.html" class="footer-link">Feedback</a>
-            </li>
-            <li class="links">
-              <a href="support.html" class="footer-link">Support</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-  
+        <img src="assets/kiki/kiki_03.jpg" alt="kiki" class="image-4">
+      </div>
+    </section>
+  </main>
+  <section class="lower">
+    <div>
+      <p class="credit">Hackathon Project</p>
+      <p>Created at InterHacktive 2023</p>
+      <p>Organised By SC-CSE</p>
+      <p>
+        <i class="fa-solid fa-building-columns"></i> Academy of Technology
+      </p>
+      <p>AdiSaptagram</p>
+    </div>
+    <div class="credits">
+      <p class="credit">Credits</p>
+      <p class="team-name">Team Limitless</p>
+      <div class="name">
+        <ul class="members">
+          <li class="our-name">
+            Trisha Seal
+            <a href="https://github.com/EmberTSeal" class="name">
+              <i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/trisha-seal/" class="name">
+              <i class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li class="our-name">
+            Arnab Bose
+            <a href="https://github.com/Arnab-129" class="name">
+              <i class="fa-brands fa-github"></i></a>
+            <a href="www.linkedin.com/in/arnab-bose-440622255" class="name">
+              <i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+      <p id="nav">Navigation</p>
+      <ul class="link-bottom">
+        <li class="links"><a href="index.html" class="footer-link">Home</a></li>
+        <li class="links">
+          <a href="about.html" class="footer-link">Our Vision</a>
+        </li>
+        <li class="links"><a href="quiz.html" class="footer-link">Quiz</a></li>
+        <li class="links">
+          <a href="feedback.html" class="footer-link">Feedback</a>
+        </li>
+        <li class="links">
+          <a href="support.html" class="footer-link">Support</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
 </body>
 
 </html>
