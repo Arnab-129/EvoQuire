@@ -46,7 +46,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:50px 70px;
+    margin:30px 70px;
 }
 
 .support {
@@ -87,6 +87,8 @@ body {
 #support {
     font-size: 40px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 
