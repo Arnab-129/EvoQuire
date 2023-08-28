@@ -104,7 +104,7 @@ main{
 
 .dialogue-daisy-1 {
   margin: 0px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
 }
 /*daisy -1*/
@@ -127,7 +127,7 @@ main{
 
 .dialogue-daisy-2 {
   margin: 0px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -198,10 +198,9 @@ main{
 
 .dialogue-daisy-3 {
   margin: 0px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   text-align: center;
-  padding: 0px 100px;
 }
 
 .image-4 {
@@ -260,7 +259,7 @@ main{
   
   .dialogue-daisy-5 {
     margin: 0px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
   }
   
@@ -332,7 +331,7 @@ main{
   
   .dialogue-daisy-6 {
     margin: 0px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
   }
   /*kiki*/
@@ -350,7 +349,7 @@ main{
   
   .dialogue-daisy-7 {
     margin: 0px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
   }
   
@@ -420,7 +419,7 @@ main{
   
   .dialogue-daisy-8 {
     margin: 0px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     text-align: center;
     padding: 0px 100px;
@@ -494,7 +493,7 @@ main{
     transform: skewY(4deg);
     font-size: 25px;
     color:#1eaeff;
-    padding:0px 500px;
+    padding:0px 50px;
     text-align: center;
 }
 
@@ -564,7 +563,6 @@ main{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding:0px 300px;
 }
 
 .chicken-only {
@@ -580,8 +578,7 @@ main{
     color:black;
     margin:50px;
     text-align: center;
-    margin:0px;
-    margin-left:130px
+    padding: 60px;
 }
 
 .frog {
@@ -597,8 +594,8 @@ main{
 .kiki-n-chicken {
     display:flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin:100px 600px 0px 200px;
+    align-items: center;
+    margin: 40px;
 }
 
 .middle-dark-2 {
