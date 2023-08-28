@@ -82,6 +82,7 @@ async function main() {
 
     submitBtn.addEventListener('click', () => {
         if (selectedIndex != -1) {
+            submitBtn.classList.add('hidden');
             options.forEach(option => option.style.pointerEvents = 'none');
             correctAnsIDParsed = (correctAnsID[quizIndex]).charCodeAt() - 65;
             if (selectedIndex === correctAnsIDParsed) {
@@ -92,6 +93,7 @@ async function main() {
                 options[correctAnsIDParsed].classList.add('correctChoice');
             }
             details = document.createElement('p');
+            details.style.fontSize = '30px';
             details.innerText = explanation[quizIndex] + '\n\n' + IPCRule[quizIndex];
             explainedAns.appendChild(details);
             explainedAns.classList.remove('hidden');
@@ -102,11 +104,12 @@ async function main() {
 
     nextQnBtn.addEventListener('click', () => {
         quizIndex++;
-        console.log(quizIndex);
+        // console.log(quizIndex);
         if(quizIndex >= 10){
             quiz.classList.add('hidden');
             return;
         }  
+        submitBtn.classList.remove('hidden');
         options[selectedIndex].classList.remove('wrongChoice', 'selected', 'correctChoice');
         options[correctAnsIDParsed].classList.remove('correctChoice');
         (quiz.children[0]).children[0].innerText = 'Q.' + (quizIndex + 1) + ' ' + qnlist[quizIndex];
