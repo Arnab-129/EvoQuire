@@ -30,6 +30,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#project-workflow">Project Workflow</li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -57,7 +58,6 @@
 - By educating children about their legal rights, EvoQuire empowers them to make informed decisions and navigate various situations confidently.
 - EvoQuire serves as a bridge, helping parents and guardians facilitate discussions about legal rights effectively and strengthen family connections.
 
-
 ### 💀 Challenges we ran into:
 - Designing the UI using Figma was challenging as it was our first experience.
 - Utilizing a database with Google Sheets and using it as an API was also a challenging task, since we have never used a database before.
@@ -68,18 +68,24 @@
 - Expand the database to contain more questions
 - User authentication
 
+### Built With
 
-<p align="right">(<a href="#read<img width="191" alt="an_logo_light_temp" src="https://user-images.githubusercontent.com/63441472/190889937-afb28215-5bb5-4115-83d2-f7afb73ef8f8.png">
-<me-top">back to top</a>)</p>
+- <a href="https://www.w3.org/html/">![Static Badge](https://custom-icon-badges.demolab.com/badge/-html-e36200?style=for-the-badge&logo=html5&logoColor=white)</a>
+- <a href="https://www.w3.org/css/">![Static Badge](https://custom-icon-badges.demolab.com/badge/-css-024ac7?style=for-the-badge&logo=css3&logoColor=white)</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">![Static Badge](https://custom-icon-badges.demolab.com/badge/-javascript-gold?style=for-the-badge&logo=javascript&logoColor=black)</a> 
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### 💻 Built With
+## Project Workflow: 
 
-<a href="https://www.w3.org/html/">![Static Badge](https://custom-icon-badges.demolab.com/badge/-html-e36200?style=for-the-badge&logo=html5&logoColor=white)</a>
-<a href="https://www.w3.org/css/">![Static Badge](https://custom-icon-badges.demolab.com/badge/-css-024ac7?style=for-the-badge&logo=css3&logoColor=white)</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">![Static Badge](https://custom-icon-badges.demolab.com/badge/-javascript-gold?style=for-the-badge&logo=javascript&logoColor=black)</a> 
+1. Idea conceptualization phase utilizing Google Sheets and Excel.
+2. UI Design using Figma.
+3. Established a Discord Server for swift communication and collaboration.
+4. Git and GitHub for collaborative project work.
+5. Developed an API to fetch data from Sheets using Google Apps Script.
+6. Hosted on GitHub Pages.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contributing
 
@@ -92,14 +98,15 @@ If you have a suggestion that would make this better, please fork the repo and c
 4. Push to the Branch (`git push origin feature/Feature1`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 <div>
-All vector illustrations from FreePik.
+All vector illustrations from FreePik.  
+
+Icons from FontAwesome.
 </div>
-<br>
 
 ## Contributors
 <div>
