@@ -20,6 +20,8 @@
 
 </div>
 
+<i><b>Currently our site isn't responsive! We are working fast to bring the EvoQuire experience on all devices.</b></i>
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
