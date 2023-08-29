@@ -44,7 +44,7 @@
 ### Preview:
 
 <div align="center">
-<img src="assets/Preview.png" height= 100% width = 11pp%>
+<img src="assets/Preview.png" height= 100% width = 100%>
 </div>
 
 ### 💭Inspiration :
