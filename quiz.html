@@ -17,6 +17,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="JAVASCRIPT/quizScript.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="JAVASCRIPT/headerscript.js" defer></script>
+
 </head>
 
 <body>
@@ -26,6 +29,7 @@
       <p class="header">EvoQuire</p>
     </div>
     <div class="links">
+      <i class="fa fa-bars icon" id="icon" onclick = toggler()></i>
       <ul class="link-right">
         <li><a href="index.html" class="header-link">Home</a></li>
         <li><a href="about.html" class="header-link">Our Vision</a></li>
@@ -36,11 +40,22 @@
       </ul>
     </div>
   </header>
+  <div id="dropdown">
+    <ul>
+      <li><a href="index.html" id="current" class="header-link">Home</a></li>
+      <li><a href="about.html" class="header-link">Our Vision</a></li>
+      <li><a href="quiz.html" class="header-link">Quiz</a></li>
+      <li><a href="feedback.html"  class="header-link">Feedback</a></li>
+      <li><a href="support.html" class="header-link">Support</a></li>
+    </ul>
+  </div>
+
+
   <main>
     <section id="instruct">
       <h1>Quiz</h1>
-      <section class="daisy-1">
-        <div class="area-1">
+      <section class="daisy-1 diag">
+        <div class="area-1 area">
           <img src="assets/daisy/daisy_02.jpg" alt="daisy" class="image-1">
           <div class="dialogue-1">
             <p class="dialogue-daisy-1">Hey there, curious minds! Ready for some brain-teasing fun?</p>
@@ -48,16 +63,16 @@
           </div>
         </div>
       </section>
-      <section class="daisy-2">
-        <div class="area-2">
+      <section class="daisy-2 diag">
+        <div class="area-2 area">
           <img src="assets/kiki/kiki_01.jpg" alt="Kiki" class="image-2">
           <div class="dialogue-2">
             <p class="dialogue-daisy-2">Absolutely! Get ready to test your legal smarts and learn along the way! </p>
           </div>
         </div>
       </section>
-      <section class="daisy-1">
-        <div class="area-1">
+      <section class="daisy-1 diag">
+        <div class="area-1 area">
           <img src="assets/daisy/daisy_06.jpg" alt="daisy" class="image-1">
           <div class="dialogue-1">
             <p class="dialogue-daisy-1">Here's the deal: we've got 10 exciting questions for you, all in multiple choice
@@ -65,8 +80,8 @@
           </div>
         </div>
       </section>
-      <section class="daisy-2">
-        <div class="area-2">
+      <section class="daisy-2 diag">
+        <div class="area-2 area">
           <img src="assets/kiki/kiki_03.jpg" alt="Kiki" class="image-2">
           <div class="dialogue-2">
             <p class="dialogue-daisy-2">That means you choose the answer that feels right to you, like picking the
@@ -74,8 +89,8 @@
           </div>
         </div>
       </section>
-      <section class="daisy-1">
-        <div class="area-1">
+      <section class="daisy-1 diag">
+        <div class="area-1 area">
           <img src="assets/daisy/daisy_01.jpg" alt="daisy" class="image-1">
           <div class="dialogue-1">
             <p class="dialogue-daisy-1">After you pick an answer, hit that submit button, and ta-da! Your choice will be
@@ -83,8 +98,8 @@
           </div>
         </div>
       </section>
-      <section class="daisy-2">
-        <div class="area-2">
+      <section class="daisy-2 diag">
+        <div class="area-2 area">
           <img src="assets/kiki/kiki_05.jpg" alt="Kiki" class="image-2">
           <div class="dialogue-2">
             <p class="dialogue-daisy-2">And guess what? We'll also tell you why it's right! Learning and playing all at
@@ -92,8 +107,8 @@
           </div>
         </div>
       </section>
-      <section class="daisy-1">
-        <div class="area-1">
+      <section class="daisy-1 diag">
+        <div class="area-1 area">
           <img src="assets/daisy/daisy_06.jpg" alt="daisy" class="image-1">
           <div class="dialogue-1">
             <p class="dialogue-daisy-1">Get ready to shine as a legal whiz, exploring important topics while having a
@@ -101,8 +116,8 @@
           </div>
         </div>
       </section>
-      <section class="daisy-3">
-        <div class="area-3">
+      <section class="daisy-3 diag">
+        <div class="area-3 area">
           <img src="assets/daisy/daisy_01.jpg" alt="daisy" class="image-3">
           <div class="dialogue-3">
             <p class="dialogue-daisy-3">So, click that button below and let's dive into the adventure of legal rights
@@ -113,7 +128,7 @@
       </section>
     </section>
     <section class="daisy-3 hidden" id="inquiz">
-      <div class="area-3">
+      <div class="area-3 area">
         <img src="assets/daisy/daisy_01.jpg" alt="daisy" class="image-3">
         <div class="dialogue-3">
           <p class="dialogue-daisy-3" id="dialog"></p>
