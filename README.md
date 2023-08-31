@@ -19,9 +19,11 @@
     <br />
 
 </div>
+</b>
 
 <i>Currently our site isn't completely responsive! We are working fast to bring the EvoQuire experience on all devices.</i>
 
+<b>
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -32,7 +34,9 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#project-workflow">Project Workflow</li>
+    <li><a href="#theme-and-tracks">Theme and Tracks</a></li>
+    <li><a href="#project-workflow">Workflow<a></li>
+    <li><a href="#overview">Overview</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -67,18 +71,50 @@
 
 ### 🔮 What's Next For Our Project:
 - Optimization and minor bug fixes
+- Improve the question explanations
 - Expand the database to contain more questions
+- Add sound effects and animations
 - User authentication
+
+### Mockup
+
+<a href= "https://www.figma.com/file/QpTGJWT3VmAcZi5TqbxlGA/InterHacktive-UI?type=design&node-id=8%3A98&mode=design&t=SVthoOToiUA2vTro-1">Here's </a> the Mockup designed in Figma.
 
 ### Built With
 
 - <a href="https://www.w3.org/html/">![Static Badge](https://custom-icon-badges.demolab.com/badge/-html-e36200?style=for-the-badge&logo=html5&logoColor=white)</a>
 - <a href="https://www.w3.org/css/">![Static Badge](https://custom-icon-badges.demolab.com/badge/-css-024ac7?style=for-the-badge&logo=css3&logoColor=white)</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">![Static Badge](https://custom-icon-badges.demolab.com/badge/-javascript-gold?style=for-the-badge&logo=javascript&logoColor=black)</a> 
+- <a href="https://www.google.com/script/start/">![Static Badge](https://custom-icon-badges.demolab.com/badge/-google_apps_script-ffffff?style=for-the-badge&logo=google-apps-script)</a> 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Project Workflow: 
+## Theme and Tracks
+
+Theme:
+- Social Impact
+
+Participating TRACKS for InterHacktive 2k23:
+- Best UI/UX Design
+- Best Project Workflow
+
+## Workflow:
+
+Full workflow of the site:
+1. Landing page introduces the user to the site and links to Quiz and Our Vision page.
+2. Navigate to Our Vision page to learn more about the vision we had in mind.
+3. Navigate to Quiz Page to get instruction about the quiz. Click on the attempt button to start the quiz.
+4. This opens a short multiple-choice-answer type quiz. Select and submit your answer, then you can see the correct answer and the corresponding explanation.
+5. If you want to quit the quiz, you can do so by clicking the 'Quit Quiz' button. Alternatively, you can continue learning by clicking 'Next Question'.
+6. After ten questions, the quiz should end. Now, you can view your score.   
+7. Click Home to go back to the landing page.
+8. Alternatively, visit Our Vision, Feedback or Support pages to check them out.
+9. Support Page contains urgent helplines.
+10. Feedback links a Google Form through which the user can submit their feedback regarding the site to the developers.
+
+## Overview: 
+
+These are the different development phases EvoQuire went through:
 
 1. Idea conceptualization phase utilizing Google Sheets and Excel.
 2. UI Design using Figma.
@@ -116,7 +152,7 @@ Icons from FontAwesome.
  <b>Made with ❤️ by Team Limitless</b>  
 
  <br/>
-    1. <a href= "https://github.com/EmberTSeal" >Trisha Seal</a> - Design, Database, Frontend
+    1. <a href= "https://github.com/EmberTSeal" >Trisha Seal</a> - Design, API, Frontend
     <br>
     2. <a href= "https://github.com/Arnab-129">Arnab Bose</a> - Frontend Development
  </div>
